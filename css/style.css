@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Hiragino Kaku Gothic Pro', 'HiraKakuPro-W3', 'Meiryo', 'MS PGothic', Arial, Helvetica, sans-serif;
+    color: #000;
+    letter-spacing: 0.05em;
+}
+div{
+    display: block;
+}
+a{
+    overflow: hidden;
+    outline: none;
+}
+.case-container{
+    width: 100%;
+    margin: 0 0 auto;
+}
+.caseTop_img{
+    text-align: center;
+    margin-bottom: 10%;
+    position: relative;
+}
+.caseTop_img img{
+    max-width: 100%;
+    height: auto;
+}
+.caseTop_img_inner{
+    /*flex: 0 0 300px;*/
+    /*width: 50%;
+    padding-left: 15px;*/
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.caseTop_img_inner img{
+    /*width: auto;*/
+    height: auto;
+    max-width: 100%;
+}
+.caseTop-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 30%;
+    margin-bottom: 50px;
+}
+.cont-wrap{
+    max-width: 100%;
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.caseTop-landscape{
+    width: 30%;
+    padding: 0.2%;
+    margin-bottom: 5%;
+}
+.caseTop-landscape_img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%; 
+    overflow: hidden;
+}
+.caseTop-landscape_img img{
+    max-width: 100%;
+    vertical-align: top;
+    border: none;
+}
+.caseTop-landscape_content a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    font-size: 100%;
+}
+.caseTop-landscape_content a:hover{
+    text-decoration-line: underline;
+}
+.caseTop-landscape_title {
+    flex:0 1 auto;
+    font-weight: bold;
+    font-size: 100%;
+}
+.caseTop-landscape_text{
+    margin-top: 14px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-size: 100%;
+}
+.pagetop {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #fff;
+    border: solid 2px #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /*opacity: 0;
+    visibility: hidden;*/
+}
+
+.pagetop__arrow {
+    height: 5px;
+    width: 5px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: translateY(20%) rotate(-45deg);
+}
